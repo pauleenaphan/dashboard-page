@@ -113,9 +113,36 @@ input[type=text]{
 
 }
 
+#dashboard_row{
+    padding: 30px;
+    height: 100px;
+    width: auto;
+}
+
+#dashboard_icon{
+    width: 30%;
+}
+
+#dashboard_title{
+    font-weight: bold;
+    font-size: 220%;
+    margin-top: 10%;
+    padding-left: -30px;
+    float: right;
+
+    
+}
+
+.inner_sidebar{
+    margin-top: -150%;
+}
+.s_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .s_icon{
-    width: 50px;
-    height: auto;
+    width: 40%;
 }
 
 
