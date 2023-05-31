@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: 'Brush Script MT', cursive;
 }
 
 .dashboard{
@@ -9,7 +10,7 @@
 }
 
 .header{
-    background-color: yellow;
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -22,13 +23,12 @@
 
 /* items in the top header */
 .top_header{
-    background-color: orange;
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    margin-bottom: -30px;
-
+    margin-top: -3%;
 }
 
 #search_icon{
@@ -40,7 +40,8 @@ input[type=text]{
     width: 250%;
     margin-left: -50%;
     height: 35px;
-    border-radius: 10px;
+    border-radius: 40px;
+    background-color: #b8b8b8;
     border-style: none;
 }
 
@@ -65,11 +66,12 @@ input[type=text]{
 /* items in the bottom header */
 .bottom_header{
     display: grid;
+    margin-top: -3%;
     grid-template-columns: 1fr 1fr;
 }
 
 .left_header{
-    background-color: green;
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -95,39 +97,45 @@ input[type=text]{
 .right_header{
     text-align: center;
     margin-left: 30%;
-    background-color: blue;
+    background-color: white;
 }
 
 .btn_icon{
     border-style: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
     margin: 30px 10px;
     padding: 15px;
     border-radius: 30px;
     width: 25%;
 }
+
+
+
 /* items in the sidebar */
 .sidebar{
     display: grid;
-    background-color: lightsteelblue;
+    background-color: orange;
     grid-column: 1/2;
     grid-row: 1/3;
 }
 
 
 #dashboard_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 30px;
 }
 
 #dashboard_icon{
-    width: 30%;
+    width: 80px;
 }
 
 #dashboard_title{
     font-weight: bold;
     font-size: 220%;
     margin-top: 10%;
-    padding-left: -30px;
-    float: right;
 }
 
 .inner_sidebar{
@@ -156,20 +164,21 @@ input[type=text]{
 
 /* items in the board area */
 .board_area{
-    background-color: black;
+    background-color:#b8b8b8;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
+
+    margin-top: -5%;
 }
 
 .board{
-    background-color: lightpink;
     grid-row: 1/2;
 }
 
 .headings{
     font-size: 30px;
-    padding: 30px;
+    padding: 15px 30px;
     font-weight: bold;
 }
 
@@ -180,9 +189,10 @@ input[type=text]{
 
 .card{
     background-color: white;
-    padding: 30px 30px 100px 30px;
+    padding: 30px;
     margin: 20px;
     border-radius: 20px;
+    border-left: 0.5rem solid orange;
 }
 
 .c_title{
@@ -191,19 +201,23 @@ input[type=text]{
     margin-bottom: 20px;
 }
 
+.c_pic{
+    padding: 20px;
+    width: 250px;
+}
+
 
 /* announcement area */
 .announcements{
-    background-color: lightgreen;
     display: grid;
     grid-row: 1/2;
 }
 
 .c_cards{
     background-color: white;
-    border-radius: 20px;
     padding: 30px;
     margin: 20px;
+    border-radius: 20px; 
 }
 
 .a_title{
@@ -218,7 +232,6 @@ input[type=text]{
 
 /* trending section */
 .trending{
-    background-color:magenta;
     display: grid;
     grid-row: 2/3;
 }
