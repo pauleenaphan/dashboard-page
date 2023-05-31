@@ -3,11 +3,9 @@
 }
 
 .dashboard{
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 0.3fr 0.9fr;
-    width: 100%;
-    height: 100%;
+    grid-template-rows: 1fr 3fr;
 }
 
 .header{
@@ -111,14 +109,13 @@ input[type=text]{
 .sidebar{
     display: grid;
     background-color: lightsteelblue;
-    grid-row: 1/3;
     grid-column: 1/2;
-
+    grid-row: 1/3;
 }
+
 
 #dashboard_row{
     padding: 30px;
-    width: auto;
 }
 
 #dashboard_icon{
@@ -162,12 +159,12 @@ input[type=text]{
     background-color: black;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .board{
     background-color: lightpink;
-    grid-row: 1/3;
+    grid-row: 1/2;
 }
 
 .headings{
@@ -198,6 +195,8 @@ input[type=text]{
 /* announcement area */
 .announcements{
     background-color: lightgreen;
+    display: grid;
+    grid-row: 1/2;
 }
 
 .c_cards{
@@ -220,6 +219,8 @@ input[type=text]{
 /* trending section */
 .trending{
     background-color:magenta;
+    display: grid;
+    grid-row: 2/3;
 }
 
 .profiles{
